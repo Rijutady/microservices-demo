@@ -29,6 +29,7 @@ public class WebServer {
      * matter.
      */
     public static final String ACCOUNTS_SERVICE_URL = "http://ACCOUNTS-SERVICE";
+    public static final String POSTs_SERVICE_URL = "http://POSTS-SERVICE";
 
     /**
      * Run the application using Spring Boot and an embedded servlet engine.
@@ -67,6 +68,11 @@ public class WebServer {
         return new WebAccountsService(ACCOUNTS_SERVICE_URL);
     }
 
+    @Bean
+    public WebPostService postService() {
+        return new WebPostService(POSTs_SERVICE_URL);
+    }
+
     /**
      * Create the controller, passing it the {@link WebAccountsService} to use.
      * 
@@ -75,6 +81,11 @@ public class WebServer {
     @Bean
     public WebAccountsController accountsController() {
         return new WebAccountsController(accountsService());
+    }
+
+    @Bean
+    public WebPostsController webPostsController() {
+        return new WebPostsController(postService());
     }
 
     @Bean

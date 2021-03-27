@@ -1,0 +1,46 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="header :: copy"></head>
+
+<body>
+	<h1>Create Post</h1>
+
+
+	<form class="bg-gray" action="#" th:object="${post}" method="GET"
+		th:action="@{/posts/submit}">
+
+	    <div class="row">
+			<div class="form-group col-4">
+				<label for="author" class="control-label col-xs-2">Author name</label>
+				<input type="text" class="form-control" id="author"
+					th:field="*{author}" placeholder="Enter author name" style="width: 15em;" />
+				<small class="form-text text-muted">Enter author name</small>
+			</div>
+	
+	    </div>
+
+        <div class="row">
+			<div class="form-group col-4">
+				<label for="content" class="control-label col-xs-2">post content</label>
+				<input type="text" class="form-control" id="content"
+						th:field="*{content}" placeholder="Enter post content"
+						style="width: 15em;" pattern="[a-zA-Z]+"/>
+				<small class="form-text text-muted">input post content here</small>
+			</div>
+	
+		</div>
+
+		<!--  Submit button -->
+		<div class="form-group">
+			<div class="col-xs-offset-2 col-xs-10">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+		</div>
+	</form>
+
+	<div th:replace="footer :: copy"></div>
+
+</body>
+</html>

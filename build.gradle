@@ -40,7 +40,7 @@ dependencies {
     compile group: 'org.hsqldb', name: 'hsqldb'
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter'
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-server', version: '2.0.1.RELEASE'
-
+compileOnly('org.projectlombok:lombok:1.16.20')
     testCompile 'junit:junit:4.+'
 }
 

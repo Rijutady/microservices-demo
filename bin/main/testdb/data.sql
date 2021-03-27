@@ -23,7 +23,3 @@ insert into T_ACCOUNT (NUMBER, NAME) values ('123456020', 'Maria J. Angelo');
 
 insert into T_POST (AUTHOR, CONTENT, THREADID) values ('author1', 'SDFOIASDIFOJAWSELF;JA', 1);
 insert into T_POST (AUTHOR, CONTENT, THREADID) values ('author2', 'WERETWERTWEWEQ;JA', 1);
-insert into T_POST (AUTHOR, CONTENT, THREADID) values ('author1', 'werwerwetwet;JA', 1);
-insert into T_POST (AUTHOR, CONTENT, THREADID) values ('author2', 'sdfgdfgsdfgsdfgsdfgsdfgsdfgasdf;JA', 1);
-insert into T_POST (AUTHOR, CONTENT, THREADID) values ('author1', 'SDFOIASDIFOJAWSELFSDFOIASDIFOJAWSELFSDFOIASDIFOJAWSELFSDFOIASDIFOJAWSELF;JA', 1);
-insert into T_POST (AUTHOR, CONTENT, THREADID) values ('author2', 'sdfgdfgsdfgsdfgsdfgsdfgsdfgasdfsdfgdfgsdfgsdfgsdfgsdfgsdfgasdf;JA', 1);

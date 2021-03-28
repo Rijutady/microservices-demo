@@ -30,15 +30,15 @@ public class PostsController {
         return posts;
     }
 
-//    @RequestMapping("/posts")
-//    public List<Post> findPosts() {
-//
-//        logger.info("posts-service byNumber() invoked: ");
-//        List<Post> posts = postRepository.findAllPosts();
-//        logger.info("posts-service byNumber() found: " + posts);
-//
-//        return posts;
-//    }
+    @RequestMapping("/posts")
+    public List<Post> findPosts() {
+
+        logger.info("posts-service byNumber() invoked: ");
+        List<Post> posts = postRepository.findAll();
+        logger.info("posts-service byNumber() found: " + posts);
+
+        return posts;
+    }
 
 //    @RequestMapping(value = "/posts/edit", method = POST)
 //    @ResponseBody

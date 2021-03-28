@@ -12,8 +12,8 @@ public interface PostRepository extends Repository<Post, Long> {
 	 * @return The account if found, null otherwise.
 	 */
 	public List<Post> findByAuthor(String author);
-//
-//	public List<Post> findAllPosts();
+
+	public List<Post> findAll();
 //
 //	public List<Post> editPost(String author);
 

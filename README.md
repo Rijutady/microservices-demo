@@ -32,3 +32,8 @@ web - 3333
 
 posts - 8888
 
+## API list
+
+/posts - List all posts
+
+/posts/{author_name} - List posts from author

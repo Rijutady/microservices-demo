@@ -46,4 +46,13 @@ public class WebPostsController {
             model.addAttribute("posts", posts);
         return "posts";
     }
+
+    @RequestMapping("/posts")
+    public String findPost(Model model) {
+
+        List<Post> posts = webPostService.findAll();
+        if (posts != null)
+            model.addAttribute("posts", posts);
+        return "posts";
+    }
 }

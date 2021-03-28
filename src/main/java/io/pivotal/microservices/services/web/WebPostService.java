@@ -51,21 +51,21 @@ public class WebPostService {
         else
             return Arrays.asList(posts);
     }
-//
-//    public List<Post> findAllPosts() {
-//        Post[] posts = null;
-//
-//        try {
-//            posts = restTemplate.getForObject(serviceUrl + "/posts", Post[].class);
-//        } catch (HttpClientErrorException e) { // 404
-//            // Nothing found
-//        }
-//
-//        if (posts == null || posts.length == 0)
-//            return null;
-//        else
-//            return Arrays.asList(posts);
-//    }
+
+    public List<Post> findAll() {
+        Post[] posts = null;
+
+        try {
+            posts = restTemplate.getForObject(serviceUrl + "/posts", Post[].class);
+        } catch (HttpClientErrorException e) { // 404
+            // Nothing found
+        }
+
+        if (posts == null || posts.length == 0)
+            return null;
+        else
+            return Arrays.asList(posts);
+    }
 
     // public List<Account> byOwnerContains(String name) {
     // logger.info("byOwnerContains() invoked: for " + name);

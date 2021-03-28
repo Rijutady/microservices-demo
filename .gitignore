@@ -10,7 +10,7 @@ gradle.properties~
 microservices-demo.ipr
 microservices-demo.iws
 
-
+bin/
 target/
 
 # Ignore OS generated files #

@@ -6,6 +6,7 @@ import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -29,4 +30,19 @@ public class PostsController {
         return posts;
     }
 
+//    @RequestMapping("/posts")
+//    public List<Post> findPosts() {
+//
+//        logger.info("posts-service byNumber() invoked: ");
+//        List<Post> posts = postRepository.findAllPosts();
+//        logger.info("posts-service byNumber() found: " + posts);
+//
+//        return posts;
+//    }
+
+//    @RequestMapping(value = "/posts/edit", method = POST)
+//    @ResponseBody
+//    public String editPost(Post setContent) {
+//        setContent;
+//    }
 }

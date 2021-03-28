@@ -21,9 +21,10 @@ insert into T_ACCOUNT (NUMBER, NAME) values ('123456018', 'Julia DeLong');
 insert into T_ACCOUNT (NUMBER, NAME) values ('123456019', 'Mark T. Rizzoli');
 insert into T_ACCOUNT (NUMBER, NAME) values ('123456020', 'Maria J. Angelo');
 
-insert into T_POST (AUTHOR, CONTENT, THREADID) values ('author1', 'SDFOIASDIFOJAWSELF;JA', 1);
-insert into T_POST (AUTHOR, CONTENT, THREADID) values ('author2', 'WERETWERTWEWEQ;JA', 1);
-insert into T_POST (AUTHOR, CONTENT, THREADID) values ('author1', 'werwerwetwet;JA', 1);
-insert into T_POST (AUTHOR, CONTENT, THREADID) values ('author2', 'sdfgdfgsdfgsdfgsdfgsdfgsdfgasdf;JA', 1);
-insert into T_POST (AUTHOR, CONTENT, THREADID) values ('author1', 'SDFOIASDIFOJAWSELFSDFOIASDIFOJAWSELFSDFOIASDIFOJAWSELFSDFOIASDIFOJAWSELF;JA', 1);
-insert into T_POST (AUTHOR, CONTENT, THREADID) values ('author2', 'sdfgdfgsdfgsdfgsdfgsdfgsdfgasdfsdfgdfgsdfgsdfgsdfgsdfgsdfgasdf;JA', 1);
+insert into T_POST (AUTHOR, CONTENT, THREADID) values ('Keri', 'hello post 1', 1);
+insert into T_POST (AUTHOR, CONTENT, THREADID) values ('Dollie', 'post body 1 from dollie', 2);
+insert into T_POST (AUTHOR, CONTENT, THREADID) values ('Keri', 'me again 2', 3);
+insert into T_POST (AUTHOR, CONTENT, THREADID) values ('Dollie', 'post body 2 from dollie', 4);
+insert into T_POST (AUTHOR, CONTENT, THREADID) values ('Keri', 'keri again 3', 5);
+insert into T_POST (AUTHOR, CONTENT, THREADID) values ('Dollie', 'post3 from dollie', 6);
+insert into T_POST (AUTHOR, CONTENT, THREADID) values ('Cornelia', 'post1 from c', 7);
